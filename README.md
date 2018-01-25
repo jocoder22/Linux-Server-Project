@@ -9,12 +9,15 @@ This project will access, secure, and perform the initial configuration of a bar
   - The complete URL to your hosted web application.
 
   - Summary of software you installed and configuration changes made.
+    1. python 2
+    2. Apache2
+    3. Sqlalchemy
+    4. Flask
+    5. Postgresql
+
   - Below is the list of any third-party resources used of to complete this project.
-      - Python 2
-      - Sqlalchemy
-      - Flask
-      - Apache2
-      - Postgresql
+      - Google OAuth2
+  
 
 
 # Installation Instruction:
