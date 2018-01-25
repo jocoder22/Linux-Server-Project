@@ -7,7 +7,7 @@ This project will access, secure, and perform the initial configuration of a bar
     - SSH port: 2200
 
   - The complete URL to your hosted web application.
-       - http://18.218.213.71\login
+       - http://18.218.213.71/login
 
   - Softwares you installed.
     1. python 2.7
