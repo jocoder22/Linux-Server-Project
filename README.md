@@ -3,11 +3,11 @@
 ## Introduction:
 This project will access, secure, and perform the initial configuration of a bare-bones Linux server. The endpoint is the installation and configuration of a web and database server and hosting of my Medication Review web application.
 
-    - Server IP address: http://18.218.213.71
+    - Server IP address: http://52.15.114.55
     - SSH port: 2200
 
   - The complete URL to your hosted web application.
-       - http://18.218.213.71/login
+       - http://52.15.114.55/login
 
   - Softwares you installed.
     1. python 2.7
