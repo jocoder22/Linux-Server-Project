@@ -24,6 +24,7 @@ This is a `RESTful` web application implemented on Python framework Flask incorp
 
 ## Operating Instruction:
     - From the browser connect to the server using the URL:
+        - http://52.15.114.55/login
     - sign in with google email account to access the Web App.
 
 [Github link](https://github.com/jocoder22/Linux-Server-Project.git)
