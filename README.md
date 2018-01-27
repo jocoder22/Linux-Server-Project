@@ -16,6 +16,7 @@ This project will access, secure, and perform the initial configuration of a bar
     4. Flask
     5. git
     6. PostgreSQL
+    7. libsqlite3-dev
 
   - Below is the list of any third-party resources used of to complete this project.
       - Google OAuth2
