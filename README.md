@@ -3,7 +3,7 @@
 ## Introduction:
 This project will access, secure, and perform the initial configuration of a bare-bones Linux server. The endpoint is the installation and configuration of a web and database server and hosting of my Medication Review web application.
 
-    - Server IP address: http://52.15.114.55
+    - Server IP address: http://54.174.85.133
     - SSH port: 2200
 
   - The complete URL to your hosted web application.
@@ -17,6 +17,7 @@ This project will access, secure, and perform the initial configuration of a bar
     5. git
     6. PostgreSQL
     7. libsqlite3-dev
+    8. mod-wsgi
 
   - Below is the list of any third-party resources used of to complete this project.
       - Google OAuth2
