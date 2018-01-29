@@ -18,6 +18,7 @@ This project will access, secure, and perform the initial configuration of a bar
     6. PostgreSQL
     7. libsqlite3-dev
     8. mod-wsgi
+    9. Python OAuth2 authentication
 
   - Below is the list of any third-party resources used of to complete this project.
       - Google OAuth2
@@ -30,6 +31,6 @@ This is a `RESTful` web application implemented on Python framework Flask incorp
     - From the browser connect to the server using the URL:
         - http://52.15.114.55/login
     - Sign in with google email account to access the Web App.
-    - Trasverse and enjoy the app
+    - Trasverse and enjoy the Web app
 
 [Github link](https://github.com/jocoder22/Linux-Server-Project.git)
