@@ -18,12 +18,8 @@ This project will access, secure, and perform the initial configuration of a bar
     6. PostgreSQL
     7. libsqlite3-dev
     8. mod-wsgi
-<<<<<<< HEAD
-    9. Fail2Ban
-||||||| merged common ancestors
-=======
     9. Python OAuth2 authentication
->>>>>>> a8fb68e65b048b8845f6fbff8ae4c208dbed029e
+    10. Fail2Ban
 
   - Below is the list of any third-party resources used of to complete this project.
       - Google OAuth2
