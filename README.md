@@ -32,7 +32,7 @@ This is a `RESTful` web application implemented on Python framework Flask incorp
 
 ## Operating Instruction:
     - From the browser connect to the server using the URL:
-        - http://52.15.114.55/login
+        - http://54.174.85.133/login
     - Sign in with google email account to access the Web App.
     - Trasverse and enjoy the Web app
 
