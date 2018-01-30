@@ -21,7 +21,7 @@ This project will access, secure, and perform the initial configuration of a bar
     9. Fail2Ban
     10. Python OAuth2 authentication
     11. python-dev
-  
+    12. nginx
 
   - Below is the list of any third-party resources used of to complete this project.
       - Google OAuth2
