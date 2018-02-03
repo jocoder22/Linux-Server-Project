@@ -21,7 +21,6 @@ This project will access, secure, and perform the initial configuration of a bar
     9. `Fail2Ban`
     10. `OAuth2client`
     11. `requests`
-    12. `nginx`
 
   - Below is the list of any third-party resources used of to complete this project.
       - Google OAuth2
@@ -41,4 +40,4 @@ This is a `RESTful` web application implemented on Python framework Flask incorp
 Useful Resources:
   - [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps)
   - [DigitalOcean Fail2ban tutorial:](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-14-04)
-  - Special thanks to [SteveWooding](https://github.com/SteveWooding/fullstack-nanodegree-linux-server-config/blob/master/README.md) for gracious README.md
+  - Special thanks to [Steve  Wooding](https://github.com/SteveWooding/fullstack-nanodegree-linux-server-config/blob/master/README.md) for gracious README.md
