@@ -10,18 +10,18 @@ This project will access, secure, and perform the initial configuration of a bar
        - http://ec2-34-201-120-164.compute-1.amazonaws.com
 
   - Softwares you installed.
-    1. python 2.7
-    2. Apache2
-    3. Sqlalchemy
-    4. Flask
-    5. git
-    6. PostgreSQL
-    7. Glances
-    8. libapache2-mod-wsgi
-    9. Fail2Ban
-    10. OAuth2client
-    11. requests
-    12. nginx
+    1. `python 2.7`
+    2. `Apache2`
+    3. `Sqlalchemy`
+    4. `Flask`
+    5. `git`
+    6. `PostgreSQL`
+    7. `Glances`
+    8. `libapache2-mod-wsgi`
+    9. `Fail2Ban`
+    10. `OAuth2client`
+    11. `requests`
+    12. `nginx`
 
   - Below is the list of any third-party resources used of to complete this project.
       - Google OAuth2
@@ -37,3 +37,9 @@ This is a `RESTful` web application implemented on Python framework Flask incorp
     - Trasverse and enjoy the Web app
 
 [Github link](https://github.com/jocoder22/Linux-Server-Project.git)
+
+Useful Resources:
+[DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps)
+DigitalOcean Fail2ban tutorial:
+[https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-14-04]
+Special thanks to [SteveWooding](https://github.com/SteveWooding/fullstack-nanodegree-linux-server-config/blob/master/README.md) for gracious README.md
