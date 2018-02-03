@@ -16,11 +16,11 @@ This project will access, secure, and perform the initial configuration of a bar
     4. Flask
     5. git
     6. PostgreSQL
-    7. libsqlite3-dev
-    8. mod-wsgi
+    7. Glances
+    8. libapache2-mod-wsgi
     9. Fail2Ban
-    10. Python OAuth2 authentication
-    11. python-dev
+    10. OAuth2client
+    11. requests
     12. nginx
 
   - Below is the list of any third-party resources used of to complete this project.
