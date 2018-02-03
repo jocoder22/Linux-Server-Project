@@ -39,7 +39,7 @@ This is a `RESTful` web application implemented on Python framework Flask incorp
 [Github link](https://github.com/jocoder22/Linux-Server-Project.git)
 
 Useful Resources:
-[DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps)
-DigitalOcean Fail2ban tutorial:
-[https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-14-04]
-Special thanks to [SteveWooding](https://github.com/SteveWooding/fullstack-nanodegree-linux-server-config/blob/master/README.md) for gracious README.md
+  - [DigitalOcean] (https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps)
+  - [DigitalOcean Fail2ban tutorial:]
+(https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-14-04)
+  - Special thanks to [SteveWooding](https://github.com/SteveWooding/fullstack-nanodegree-linux-server-config/blob/master/README.md) for gracious README.md
