@@ -33,7 +33,11 @@ This is a `RESTful` web application implemented on Python framework Flask incorp
   `sudo ufw status`
   `sudo ufw default deny incoming`
   `sudo ufw default allow outgoing`
-  
+  `sudo ufw allow ssh`
+  `sudo ufw allow www`
+  `sudo ufw allow 123/udp`
+  `sudo ufw deny 22`
+  `sudo ufw enable`
 
 ## Operating Instruction:
     - From the browser connect to the server using the URL:
