@@ -39,6 +39,7 @@ This is a `RESTful` web application implemented on Python framework Flask incorp
 
 Useful Resources:
   - [Amazon Lightsail](https://aws.amazon.com/)
+  - [Google Developers](https://developers.google.com/)
   - [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps)
   - [DigitalOcean Fail2ban tutorial:](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-14-04)
   - Special thanks to [Steve  Wooding](https://github.com/SteveWooding/fullstack-nanodegree-linux-server-config/blob/master/README.md) for gracious README.md
