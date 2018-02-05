@@ -37,7 +37,13 @@ This project will access, secure, and perform the initial configuration of a bar
     # configuration of automatic upgrades
       - cd /etc/apt/apt-conf.d
       - sudo vim 50unattended-upgrades
-          - Ensure that only security update is unchecked
+            - Ensure that only security update is unchecked
+      - sudo vim 10periodic
+              - update - APT::Periodic::Download-Upgradeable-Packages "1";
+              - update - APT::Periodic::AutocleanInterval "7";
+              - Add - APT::Periodic::unattended-Upgrase "1";
+
+      - source ~/.bashrc    # to restart 
 
 ## App Implementation :
 This is a `RESTful` web application implemented on Python framework Flask incorporating `Google` third party `OAuth authentication`. Registered users can view, edit and delete medication categories and medications created by them while unregistered user can only view the medication categories and medication within each category.
