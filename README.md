@@ -27,6 +27,9 @@ This project will access, secure, and perform the initial configuration of a bar
   - Below is the list of any third-party resources used of to complete this project.
       - Google OAuth2
 
+## Update Server app
+    - sudo apt-get update
+    - sudo apt-get upgrade
 
 ## App Implementation :
 This is a `RESTful` web application implemented on Python framework Flask incorporating `Google` third party `OAuth authentication`. Registered users can view, edit and delete medication categories and medications created by them while unregistered user can only view the medication categories and medication within each category.
