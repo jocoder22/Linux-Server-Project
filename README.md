@@ -41,7 +41,7 @@ This project will access, secure, and perform the initial configuration of a bar
       - sudo vim 10periodic
               - update - APT::Periodic::Download-Upgradeable-Packages "1";
               - update - APT::Periodic::AutocleanInterval "7";
-              - Add - APT::Periodic::unattended-Upgrase "1";
+              - Add - APT::Periodic::unattended-Upgrade "1";
 
       - source ~/.bashrc    # to restart 
 
