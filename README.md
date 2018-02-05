@@ -31,6 +31,11 @@ This project will access, secure, and perform the initial configuration of a bar
     - sudo apt-get update
     - sudo apt-get upgrade
 
+## Install and configure automatic upgrade
+    - sudo apt-get install  unattended-upgrades
+
+
+
 ## App Implementation :
 This is a `RESTful` web application implemented on Python framework Flask incorporating `Google` third party `OAuth authentication`. Registered users can view, edit and delete medication categories and medications created by them while unregistered user can only view the medication categories and medication within each category.
 
