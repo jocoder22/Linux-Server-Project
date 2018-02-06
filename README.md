@@ -67,7 +67,7 @@ This is a `RESTful` web application implemented on Python framework Flask incorp
 
 [Github link](https://github.com/jocoder22/Linux-Server-Project.git)
 
-Useful Resources:
+Useful Resources and References:
   - [Amazon Lightsail](https://aws.amazon.com/)
   - [Google Developers](https://developers.google.com/)
   - [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps)
