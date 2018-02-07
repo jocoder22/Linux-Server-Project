@@ -69,6 +69,14 @@ This project will access, secure, and perform the initial configuration of a bar
       - sudo vim .ssh/authorized_keys
         # paste the public key on this file
         # save the file
+      # change directory and file privileges
+       - chmod 700 .ssh
+       - chmod 644 .ssh/authorized_keys
+
+
+
+
+       
 ## Configure server Uncomplicated Firewall
     - sudo ufw status
     - sudo ufw default deny incoming
