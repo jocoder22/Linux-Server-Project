@@ -51,7 +51,7 @@ This project will access, secure, and perform the initial configuration of a bar
       - sudo vim /etc/sudoers.d/grader
         # add the line below
         grader ALL=(ALL:ALL)  NOPASSWD:ALL
-        # save the file
+        # save and close the file
 
 ## Configure SSH
     # on local machine terminal, generate the ssh keys
@@ -68,15 +68,24 @@ This project will access, secure, and perform the initial configuration of a bar
       - mkdir .ssh
       - sudo vim .ssh/authorized_keys
         # paste the public key on this file
-        # save the file
+        # save and close the file
       # change directory and file privileges
        - chmod 700 .ssh
        - chmod 644 .ssh/authorized_keys
+      # Configure the ssh login
+        # open the configuration file
+          - sudo vim /etc/ssh/sshd_config
+            # Update the follow configuration
+              # change Port from 22 to 2200
+              # change PermitRootLogin to no
+              # change PasswordAuthentication to no
+            # save and close the file
+      # restart ssh service
+        - sudo service ssh restart
 
 
 
 
-       
 ## Configure server Uncomplicated Firewall
     - sudo ufw status
     - sudo ufw default deny incoming
