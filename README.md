@@ -62,8 +62,13 @@ This project will access, secure, and perform the initial configuration of a bar
       # copy the public key i.e grader-pub
         - cat ~/.ssh/grader-pub
 
-
-    
+    # on the server, paste the ssh public key
+      # first switch to grader home directory
+      - su - grader
+      - mkdir .ssh
+      - sudo vim .ssh/authorized_keys
+        # paste the public key on this file
+        # save the file
 ## Configure server Uncomplicated Firewall
     - sudo ufw status
     - sudo ufw default deny incoming
