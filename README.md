@@ -50,10 +50,20 @@ This project will access, secure, and perform the initial configuration of a bar
     - give grader sudo privileges
       - sudo vim /etc/sudoers.d/grader
         # add the line below
-        grader ALL=(ALL:ALL)  NOPASSWD:allow
+        grader ALL=(ALL:ALL)  NOPASSWD:ALL
         # save the file
 
+## Configure SSH
+    # on local machine terminal, generate the ssh keys
+    - ssh-keygen
+      # enter the path to file and name of the file
+        ~/.ssh/grader
+        ## enter passphrase twice
+      # copy the public key i.e grader-pub
+        - cat ~/.ssh/grader-pub
 
+
+    
 ## Configure server Uncomplicated Firewall
     - sudo ufw status
     - sudo ufw default deny incoming
