@@ -83,8 +83,15 @@ This project will access, secure, and perform the initial configuration of a bar
       # restart ssh service
         - sudo service ssh restart
 
-## Major applications and Softwares
+# Major applications and Softwares
+  ## Install Apache2
     - sudo apt-get install apache2
+    - sudo apt-get install libapache2-mod-wsgi python-dev
+      # Enable Apache2
+        - sudo a2enmod wsgi
+        - sudo service apache2 start
+
+    ## Instill Git
     - sudo apt-get install github
     - sudo apt-get install postgresql
 
@@ -94,7 +101,9 @@ This project will access, secure, and perform the initial configuration of a bar
      # switch to postgresql using standard postgresql's progres users
       - su - progres
       - psql
-
+        # give user catalog database privileges
+          - CREATE USER catalog WITH PASSWORD <enter your password>
+          -
 
 
 ## Configure server Uncomplicated Firewall
