@@ -83,6 +83,17 @@ This project will access, secure, and perform the initial configuration of a bar
       # restart ssh service
         - sudo service ssh restart
 
+## Configure server Uncomplicated Firewall
+    - sudo ufw status
+    - sudo ufw default deny incoming
+    - sudo ufw default allow outgoing
+    - sudo ufw allow ssh
+    - sudo ufw allow www
+    - sudo ufw allow 123/udp
+    - sudo ufw deny 22
+    - sudo ufw enable
+    - sudo ufw status
+
 # Major applications and Softwares
   ## Install Apache2
     - sudo apt-get install apache2
@@ -114,16 +125,7 @@ This project will access, secure, and perform the initial configuration of a bar
             - exit  ## to exit postgresql
 
 
-## Configure server Uncomplicated Firewall
-    - sudo ufw status
-    - sudo ufw default deny incoming
-    - sudo ufw default allow outgoing
-    - sudo ufw allow ssh
-    - sudo ufw allow www
-    - sudo ufw allow 123/udp
-    - sudo ufw deny 22
-    - sudo ufw enable
-    - sudo ufw status
+
 
 ## App Implementation :
 This is a `RESTful` web application implemented on Python framework Flask incorporating `Google` third party `OAuth authentication`. Registered users can view, edit and delete medication categories and medications created by them while unregistered user can only view the medication categories and medication within each category.
