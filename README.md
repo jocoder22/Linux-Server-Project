@@ -83,6 +83,10 @@ This project will access, secure, and perform the initial configuration of a bar
       # restart ssh service
         - sudo service ssh restart
 
+## Major applications and Softwares
+    - sudo apt-get install apache2
+    - sudo apt-get install github
+    - sudo apt-get install postgresql
 
 
 
