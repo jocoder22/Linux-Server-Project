@@ -93,17 +93,25 @@ This project will access, secure, and perform the initial configuration of a bar
 
     ## Instill Git
     - sudo apt-get install github
-    - sudo apt-get install postgresql
 
 
-## Crate user catalog
-    - sudo adduser catalog
-     # switch to postgresql using standard postgresql's progres users
-      - su - progres
-      - psql
-        # give user catalog database privileges
-          - CREATE USER catalog WITH PASSWORD <enter your password>
-          -
+
+  ## Install and configure PostgreSQL with user catalog
+      - sudo adduser catalog
+      - sudo apt-get install postgresql
+       # switch to postgresql using standard postgresql's progres users
+        - su - progres
+        - psql
+          # give user catalog database privileges
+            - CREATE USER catalog WITH PASSWORD '<enter your password>';
+            - ALTER USER catalog CREATEDB;
+            - CREATE DATABASE catalog WITH OWNER catalog;
+            - \c catalog  ## change to user catalog
+            - REVOKE ALL ON SCHEMA public FROM public;
+            - GRANT ALL ON SCHEMA public TO catalog;
+            - \du
+            - \q   ## to switch back to progres users
+            - exit  ## to exit postgresql
 
 
 ## Configure server Uncomplicated Firewall
