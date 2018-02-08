@@ -89,6 +89,13 @@ This project will access, secure, and perform the initial configuration of a bar
     - sudo apt-get install postgresql
 
 
+## Crate user catalog
+    - sudo adduser catalog
+     # switch to postgresql using standard postgresql's progres users
+      - su - progres
+      - psql
+
+
 
 ## Configure server Uncomplicated Firewall
     - sudo ufw status
