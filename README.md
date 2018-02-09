@@ -102,11 +102,11 @@ This project will access, secure, and perform the initial configuration of a bar
         - sudo a2enmod wsgi
         - sudo service apache2 start
 
-  ## install Git
+  ## Install Git
   - sudo apt-get install github
   - ## configure username and email
-    - git config --global user.name <user name>
-    - git config --global user.email <user email>
+    - git config --global user.name `<user name>`
+    - git config --global user.email `<user email>`
   - ## Ensure server don't serve git directory
     - cd /var/www/catalog
     - sudo vim .htaccess
@@ -117,21 +117,22 @@ This project will access, secure, and perform the initial configuration of a bar
 
 
   ## Install and configure PostgreSQL with user catalog
-      - sudo adduser catalog
-      - sudo apt-get install postgresql
-       # switch to postgresql using standard postgresql's progres users
-        - su - progres
-        - psql
-          # give user catalog database privileges
-            - CREATE USER catalog WITH PASSWORD '<enter your password>';
-            - ALTER USER catalog CREATEDB;
-            - CREATE DATABASE catalog WITH OWNER catalog;
-            - \c catalog  ## change to user catalog
-            - REVOKE ALL ON SCHEMA public FROM public;
-            - GRANT ALL ON SCHEMA public TO catalog;
-            - \du
-            - \q   ## to switch back to progres users
-            - exit  ## to exit postgresql
+  - sudo adduser catalog
+  - sudo apt-get install postgresql
+  - ## switch to postgresql using standard postgresql's progres users
+    - su - progres
+    - psql
+  - ## give user catalog database privileges
+    - CREATE USER catalog WITH PASSWORD '<enter your password>';
+    - ALTER USER catalog CREATEDB;
+    - CREATE DATABASE catalog WITH OWNER catalog;
+    - \c catalog  
+  - ## change to user catalog
+    - REVOKE ALL ON SCHEMA public FROM public;
+    - GRANT ALL ON SCHEMA public TO catalog;
+    - \du
+    - \q   ## to switch back to progres users
+    - exit  ## to exit postgresql
 
 
 
