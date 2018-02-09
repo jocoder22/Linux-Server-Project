@@ -102,8 +102,11 @@ This project will access, secure, and perform the initial configuration of a bar
         - sudo a2enmod wsgi
         - sudo service apache2 start
 
-    ## Instill Git
+    ## install Git
     - sudo apt-get install github
+    - ## configure username and email
+      - git config --global user.name <user name>
+      - git config --global user.email <user email>
 
 
 
