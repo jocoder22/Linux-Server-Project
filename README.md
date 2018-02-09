@@ -28,8 +28,8 @@ This project will access, secure, and perform the initial configuration of a bar
       - Google OAuth2
 
 ## Update Server app
-      - sudo apt-get update
-      - sudo apt-get upgrade
+  - sudo apt-get update
+  - sudo apt-get upgrade
 
 ## Install and configure automatic upgrade
     - sudo apt-get install  unattended-upgrades
@@ -46,12 +46,12 @@ This project will access, secure, and perform the initial configuration of a bar
       - source ~/.bashrc    # to restart
 
 ## Add user grader
-    - sudo adduser grader
-    - give grader sudo privileges
-      - sudo vim /etc/sudoers.d/grader
-        # add the line below
-        grader ALL=(ALL:ALL)  NOPASSWD:ALL
-        # save and close the file
+- sudo adduser grader
+- ## Give grader sudo privileges
+  - sudo vim /etc/sudoers.d/grader
+    - ## Add the line below
+    grader ALL=(ALL:ALL)  NOPASSWD:ALL
+    - ## Save and close the file
 
 ## Configure SSH
     # on local machine terminal, generate the ssh keys
