@@ -58,12 +58,12 @@ This project will access, secure, and perform the initial configuration of a bar
   - ssh-keygen
   ## enter the path to file and name of the file
   - ~/.ssh/grader
-  ## enter passphrase twice
-  ## copy the public key i.e grader-pub
+    # enter passphrase twice
+    # copy the public key i.e grader-pub
   - cat ~/.ssh/grader-pub
 
-  ## on the server, paste the ssh public key
-  ## first switch to grader home directory
+  ## On the server, paste the ssh public key
+    # Switch to grader home directory
   - su - grader
   - mkdir .ssh
   - sudo vim .ssh/authorized_keys
@@ -74,15 +74,15 @@ This project will access, secure, and perform the initial configuration of a bar
   - chmod 644 .ssh/authorized_keys
 
 ## Configure the ssh login
-  ## open the configuration file
+  # Open the configuration file
   - sudo vim /etc/ssh/sshd_config
-  ## Update the follow configuration
+  # Update the follow configuration
     change Port from 22 to 2200
     change PermitRootLogin to no
     change PasswordAuthentication to no
-  save and close the file
-## restart ssh service
-- sudo service ssh restart
+  - save and close the file
+  # Restart ssh service
+  - sudo service ssh restart
 
 ## Configure server Uncomplicated Firewall
   - sudo ufw status
@@ -105,7 +105,7 @@ This project will access, secure, and perform the initial configuration of a bar
 
   ## Install Git
   - sudo apt-get install github
-  - ## configure username and email
+  - ## Configure username and email
     - git config --global user.name `<user name>`
     - git config --global user.email `<user email>`
   - ## Ensure server don't serve git directory
@@ -120,15 +120,15 @@ This project will access, secure, and perform the initial configuration of a bar
   ## Install and configure PostgreSQL with user catalog
   - sudo adduser catalog
   - sudo apt-get install postgresql
-  - ## switch to postgresql using standard postgresql's progres users
+  - ## Switch to postgresql using standard postgresql's progres users
     - su - progres
     - psql
-  - ## give user catalog database privileges
+  - ## Give user catalog database privileges
     - CREATE USER catalog WITH PASSWORD '<enter your password>';
     - ALTER USER catalog CREATEDB;
     - CREATE DATABASE catalog WITH OWNER catalog;
     - \c catalog  
-  - ## change to user catalog
+  - ## Change to user catalog
     - REVOKE ALL ON SCHEMA public FROM public;
     - GRANT ALL ON SCHEMA public TO catalog;
     - \du
