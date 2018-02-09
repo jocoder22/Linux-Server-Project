@@ -28,8 +28,8 @@ This project will access, secure, and perform the initial configuration of a bar
       - Google OAuth2
 
 ## Update Server app
-    - sudo apt-get update
-    - sudo apt-get upgrade
+      - sudo apt-get update
+      - sudo apt-get upgrade
 
 ## Install and configure automatic upgrade
     - sudo apt-get install  unattended-upgrades
