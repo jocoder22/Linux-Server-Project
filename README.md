@@ -28,8 +28,8 @@ This project will access, secure, and perform the initial configuration of a bar
       - Google OAuth2
 
 ## Update Server app
-  - sudo apt-get update
-  - sudo apt-get upgrade
+    - sudo apt-get update
+    - sudo apt-get upgrade
 
 ## Install and configure automatic upgrade
     - sudo apt-get install  unattended-upgrades
@@ -46,42 +46,43 @@ This project will access, secure, and perform the initial configuration of a bar
       - source ~/.bashrc    # to restart
 
 ## Add user grader
-- sudo adduser grader
-- ## Give grader sudo privileges
-  - sudo vim /etc/sudoers.d/grader
-    - ## Add the line below
-    grader ALL=(ALL:ALL)  NOPASSWD:ALL
-    - ## Save and close the file
+    - sudo adduser grader
+    - give grader sudo privileges
+      - sudo vim /etc/sudoers.d/grader
+        # add the line below
+        grader ALL=(ALL:ALL)  NOPASSWD:ALL
+        # save and close the file
 
 ## Configure SSH
-    # on local machine terminal, generate the ssh keys
-    - ssh-keygen
-      # enter the path to file and name of the file
-        ~/.ssh/grader
-        ## enter passphrase twice
-      # copy the public key i.e grader-pub
-        - cat ~/.ssh/grader-pub
+  ## on local machine terminal, generate the ssh keys
+  - ssh-keygen
+  ## enter the path to file and name of the file
+  - ~/.ssh/grader
+  ## enter passphrase twice
+  ## copy the public key i.e grader-pub
+  - cat ~/.ssh/grader-pub
 
-    # on the server, paste the ssh public key
-      # first switch to grader home directory
-      - su - grader
-      - mkdir .ssh
-      - sudo vim .ssh/authorized_keys
-        # paste the public key on this file
-        # save and close the file
-      # change directory and file privileges
-       - chmod 700 .ssh
-       - chmod 644 .ssh/authorized_keys
-      # Configure the ssh login
-        # open the configuration file
-          - sudo vim /etc/ssh/sshd_config
-            # Update the follow configuration
-              # change Port from 22 to 2200
-              # change PermitRootLogin to no
-              # change PasswordAuthentication to no
-            # save and close the file
-      # restart ssh service
-        - sudo service ssh restart
+  ## on the server, paste the ssh public key
+  ## first switch to grader home directory
+  - su - grader
+  - mkdir .ssh
+  - sudo vim .ssh/authorized_keys
+    # paste the public key on this file
+    # save and close the file
+  ## change directory and file privileges
+  - chmod 700 .ssh
+  - chmod 644 .ssh/authorized_keys
+
+## Configure the ssh login
+  ## open the configuration file
+  - sudo vim /etc/ssh/sshd_config
+  ## Update the follow configuration
+    change Port from 22 to 2200
+    change PermitRootLogin to no
+    change PasswordAuthentication to no
+  save and close the file
+## restart ssh service
+- sudo service ssh restart
 
 ## Configure server Uncomplicated Firewall
   - sudo ufw status
