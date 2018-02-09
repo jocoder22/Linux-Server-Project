@@ -84,23 +84,23 @@ This project will access, secure, and perform the initial configuration of a bar
         - sudo service ssh restart
 
 ## Configure server Uncomplicated Firewall
-    - sudo ufw status
-    - sudo ufw default deny incoming
-    - sudo ufw default allow outgoing
-    - sudo ufw allow ssh
-    - sudo ufw allow www
-    - sudo ufw allow 123/udp
-    - sudo ufw deny 22
-    - sudo ufw enable
-    - sudo ufw status
+  - sudo ufw status
+  - sudo ufw default deny incoming
+  - sudo ufw default allow outgoing
+  - sudo ufw allow ssh
+  - sudo ufw allow www
+  - sudo ufw allow 123/udp
+  - sudo ufw deny 22
+  - sudo ufw enable
+  - sudo ufw status
 
 # Major applications and Softwares
   ## Install Apache2
-    - sudo apt-get install apache2
-    - sudo apt-get install libapache2-mod-wsgi python-dev
-      # Enable Apache2
-        - sudo a2enmod wsgi
-        - sudo service apache2 start
+  - sudo apt-get install apache2
+  - sudo apt-get install libapache2-mod-wsgi python-dev
+  ## Enable Apache2
+  - sudo a2enmod wsgi
+  - sudo service apache2 start
 
   ## Install Git
   - sudo apt-get install github
