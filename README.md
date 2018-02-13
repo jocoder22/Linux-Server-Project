@@ -147,6 +147,9 @@ This project will access, secure, and perform the initial configuration of a bar
     - sudo iptables -A input -p tcp --dport 2220 -j ACCEPT
     - sudo iptables -A input -p tcp -m multiport --dports 80, 123 -j ACCEPT
     - sudo iptables -A input -j DROP
+    - sudo iptables -S
+    - sudo dpkg-reconfigure iptables-persistent
+    - sudo service fail2ban start
 
 
 
