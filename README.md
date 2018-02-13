@@ -140,6 +140,16 @@ This project will access, secure, and perform the initial configuration of a bar
   ## Install and configure Fail2Ban
   - sudo apt-get install fail2ban
   - sudo apt-get sendmail iptables-persistent
+  - sudo service fail2ban stop
+  - ## Configure Base Firewall
+    - sudo iptables -A input -i lo -j Accept
+    - sudo iptables -A input -m conntrack --ctstate ESTABLISHED, RELATED -j ACCEPT
+    - sudo iptables -A input -p tcp --dport 2220 -j ACCEPT
+    - sudo iptables -A input -p tcp -m multiport --dports 80, 123 -j ACCEPT
+    - sudo iptables -A input -j DROP
+
+
+
   - ## Adjust Fail2Ban local configuration file
     - sudo vim /etc/fail2ban/jail.local
     ## Adjust the following
