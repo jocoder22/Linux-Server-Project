@@ -54,35 +54,36 @@ This project will access, secure, and perform the initial configuration of a bar
         # save and close the file
 
 ## Configure SSH
-  ## on local machine terminal, generate the ssh keys
-  - ssh-keygen
-  ## enter the path to file and name of the file
-  - ~/.ssh/grader
-    # enter passphrase twice
-    # copy the public key i.e grader-pub
-  - cat ~/.ssh/grader-pub
+  - ## On local machine terminal, generate the ssh keys
+    - ssh-keygen
+  - ## Enter the path to file and name of the file
+    - ~/.ssh/grader
+        - ## enter passphrase twice
+        - ## copy the public key i.e grader-pub
+           - cat ~/.ssh/grader-pub
 
-  ## On the server, paste the ssh public key
-    # Switch to grader home directory
-  - su - grader
-  - mkdir .ssh
-  - sudo vim .ssh/authorized_keys
-    # paste the public key on this file
-    # save and close the file
-  ## change directory and file privileges
-  - chmod 700 .ssh
-  - chmod 644 .ssh/authorized_keys
+  ## On the server
+  - ## Switch to grader home directory
+    - su - grader
+    - mkdir .ssh
+ 
+  - ## Paste the public key on this file
+    - sudo vim .ssh/authorized_keys
+        - save and close the file
+  - ## change directory and file privileges
+    - chmod 700 .ssh
+    - chmod 644 .ssh/authorized_keys
 
-## Configure the ssh login
-  # Open the configuration file
-  - sudo vim /etc/ssh/sshd_config
-  # Update the follow configuration
-    change Port from 22 to 2200
-    change PermitRootLogin to no
-    change PasswordAuthentication to no
-  - save and close the file
-  # Restart ssh service
-  - sudo service ssh restart
+  - ## Configure the ssh login
+    - Open the configuration file
+    - sudo vim /etc/ssh/sshd_config
+  - ## Update the follow configuration
+        - change Port from 22 to 2200
+        - change PermitRootLogin to no
+        - change PasswordAuthentication to no
+        - save and close the file
+  - ## Restart ssh service
+    - sudo service ssh restart
 
 ## Configure server Uncomplicated Firewall
   - sudo ufw status
