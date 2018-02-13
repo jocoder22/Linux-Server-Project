@@ -66,7 +66,7 @@ This project will access, secure, and perform the initial configuration of a bar
   - ## Switch to grader home directory
     - su - grader
     - mkdir .ssh
- 
+
   - ## Paste the public key on this file
     - sudo vim .ssh/authorized_keys
         - save and close the file
@@ -140,6 +140,16 @@ This project will access, secure, and perform the initial configuration of a bar
   ## Install and configure Fail2Ban
   - sudo apt-get install fail2ban
   - sudo apt-get sendmail iptables-persistent
+  - ## Adjust Fail2Ban local configuration file
+    - sudo vim /etc/fail2ban/jail.local
+    ## Adjust the following
+      - bandtime = 1800
+      - destemail = <your email>
+      - action = %(action_mwl)s
+      - safe and close this file
+    ## Stop and restart Fail2Ban
+    - sudo service fail2ban Stop
+    - sudo service fail2ban start
 
 
 
