@@ -136,6 +136,11 @@ This project will access, secure, and perform the initial configuration of a bar
     - exit  ## to exit postgresql
 
 
+  ## Install and configure Fail2Ban
+  - sudo apt-get install fail2ban
+  - sudo apt-get sendmail iptables-persistent
+
+
 
 
 ## App Implementation :
