@@ -151,6 +151,8 @@ This project will access, secure, and perform the initial configuration of a bar
     - sudo dpkg-reconfigure iptables-persistent
     - sudo service fail2ban start
 
+  [source Digitalocean](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-14-04)
+
 
 
   - ## Adjust Fail2Ban local configuration file
@@ -161,8 +163,8 @@ This project will access, secure, and perform the initial configuration of a bar
       - action = %(action_mwl)s
       - safe and close this file
     ## Stop and restart Fail2Ban
-    - sudo service fail2ban Stop
-    - sudo service fail2ban start
+      - sudo service fail2ban Stop
+      - sudo service fail2ban start
 
 
 
