@@ -46,12 +46,12 @@ This project will access, secure, and perform the initial configuration of a bar
       - source ~/.bashrc    # to restart
 
 ## Add user grader
-    - sudo adduser grader
-    - give grader sudo privileges
+  - sudo adduser grader
+  - give grader sudo privileges
       - sudo vim /etc/sudoers.d/grader
-        # add the line below
-        grader ALL=(ALL:ALL)  NOPASSWD:ALL
-        # save and close the file
+        - add the line below
+          - grader ALL=(ALL:ALL)  NOPASSWD:ALL
+  - save and close the file
 
 ## Configure SSH
   - ## On local machine terminal, generate the ssh keys
