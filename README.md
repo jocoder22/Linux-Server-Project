@@ -28,22 +28,22 @@ This project will access, secure, and perform the initial configuration of a bar
       - Google OAuth2
 
 ## Update Server app
-    - sudo apt-get update
-    - sudo apt-get upgrade
+  - sudo apt-get update
+  - sudo apt-get upgrade
 
 ## Install and configure automatic upgrade
-    - sudo apt-get install  unattended-upgrades
+  - sudo apt-get install  unattended-upgrades
 
-    # configuration of automatic upgrades
+  - configuration of automatic upgrades
       - cd /etc/apt/apt-conf.d
       - sudo vim 50unattended-upgrades
-            - Ensure that only security update is unchecked
-      - sudo vim 10periodic
+      - Ensure that only security update is unchecked
+       - sudo vim 10periodic
               - update - APT::Periodic::Download-Upgradeable-Packages "1";
               - update - APT::Periodic::AutocleanInterval "7";
               - Add - APT::Periodic::unattended-Upgrade "1";
-
-      - source ~/.bashrc    # to restart
+      - Restart
+            - source ~/.bashrc  
 
 ## Add user grader
   - sudo adduser grader
@@ -94,7 +94,7 @@ This project will access, secure, and perform the initial configuration of a bar
   - sudo ufw enable
   - sudo ufw status
 
-# Major applications and Softwares
+# Major applications and Softwares Installation
   ## Install Apache2
   - sudo apt-get install apache2
   - sudo apt-get install libapache2-mod-wsgi python-dev
