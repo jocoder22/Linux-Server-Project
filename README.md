@@ -3,7 +3,7 @@
 ## Introduction:
 This project will access, secure, and perform the initial configuration of a bare-bones Linux server. The endpoint is the installation and configuration of a web and database server hosting my Medication Review web application.
 
-    - Server IP address: http://34.201.120.164
+    - Server IP address: http://35.170.174.116
     - SSH port: 2200
 
   - The complete URL to your hosted web application.
