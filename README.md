@@ -7,7 +7,7 @@ This project will access, secure, and perform the initial configuration of a bar
     - SSH port: 2200
 
   - The complete URL to your hosted web application.
-       - http://34.201.120.164/login
+       - http://www.jocoder22.com
 
   - Softwares you installed.
     1. python 2.7
@@ -172,7 +172,7 @@ This is a `RESTful` web application implemented on Python framework Flask incorp
 
 ## Operating Instruction:
     - From the browser connect to the server using the URL:
-        - http://54.174.85.133/login
+        - http://www.jocoder22.com
     - Sign in with google email account to for authentication and login to access the Web App.
     - Trasverse and enjoy the Web app
 
